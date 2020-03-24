@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 100px;
+		}
+		div{
+			border: 3px solid #000;
+		}
+		.box{
+			height: 250px;
+			width: 100px;
+		}
+		.c{
+			height: 50px;
+			width: 50px;
+			margin: 20px;
+			border-radius: 50%;
+		}
+		.red{
+			animation: redlamp 7s infinite ;
+		}
+		.orange{
+			animation: orangelamp 7s infinite ;
+		}
+		.green{
+			animation: greenlamp 7s infinite ;
+		}
+
+		@keyframes redlamp{
+			0%{background-color: red}
+			40%{background-color: gray}
+			100%{background-color: gray}
+		}
+		@keyframes orangelamp{
+			0%{background-color: gray}
+			40%{background-color: orange}
+			70%{background-color: gray}
+			100%{background-color: gray}
+		}
+		@keyframes greenlamp{
+			0%{background-color: gray}
+			69%{background-color: gray}
+			70%{background-color: green}
+			100%{background-color: gray}
+		}
+
+		.line{
+			height: 300px;
+			width: 20px;
+			border-top: none;
+			margin-left: 40px; 
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="red c"></div>
+		<div class="orange c"></div>
+		<div class="green c"></div>
+	</div>
+	<div class="line"></div>
+</body>
+</html>

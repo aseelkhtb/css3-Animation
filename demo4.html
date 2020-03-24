@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+		}
+		.c{
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			margin: 30px;
+			display: inline-block;
+			margin-top: 20vh;
+		}
+		.red{
+			border: 1px solid #CE0508;
+			background-color: #F80509;
+			opacity: .8;
+			box-shadow: 0 0 20px 10px #F80509;
+			animation: anred 1s alternate-reverse infinite;
+		}
+		@keyframes anred{
+			from{transform: translateY(50vh);}
+			to{transform: translateY(0);}
+		}
+		.orenge{
+			border: 1px solid #DE6603;
+			background-color: #F1730B;
+			opacity: .8;
+			box-shadow: 0 0 20px 10px #F1730B;
+			animation: anred 1.5s alternate-reverse infinite;
+		}
+		.yellow{
+			border: 1px solid #E0DC07;
+			background-color: #F3EF01;
+			opacity: .8;
+			box-shadow: 0 0 20px 10px #F3EF01;
+			animation: anred 3.5s alternate-reverse infinite;
+		}
+		.blue{
+			border: 1px solid #0476D2;
+			background-color: #0A8DF7;
+			opacity: .8;
+			box-shadow: 0 0 20px 10px #0A8DF7;
+			animation: anred 2s alternate-reverse infinite;
+		}
+		.pink{
+			border: 1px solid #E005BB;
+			background-color: #F709CF;
+			opacity: .8;
+			box-shadow: 0 0 20px 10px #F709CF;
+			animation: anred 4s alternate-reverse infinite;
+		}
+		.green{
+			border: 1px solid #40D707;
+			background-color: #46F503;
+			opacity: .8;
+			box-shadow: 0 0 20px 10px #46F503;
+			animation: anred 3s alternate-reverse infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="c red"></div>
+	<div class="c orenge"></div>
+	<div class="c yellow"></div>
+	<div class="c green"></div>
+	<div class="c blue"></div>
+	<div class="c pink"></div>
+</body>
+</html>

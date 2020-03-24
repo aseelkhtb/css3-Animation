@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 200px;
+		}
+		div{
+			border-radius: 100%;
+			border: 10px solid #0DF3BA;
+			position: absolute;
+		}
+		.minicircle{
+			height: 10px;
+			width: 10px;
+			top: 200px;
+			left: 100px;
+		}
+		.maincircle{
+			height: 100px;
+			width: 100px;
+			top: 220px;
+			left: 55px;
+		}
+		.dott{
+			height: 2px;
+		    width: 2px;
+		    border: 6px solid #0DF3BA;
+		    background-color: #0DF3BA;
+		    top: 272px;
+		    left: 108px;
+		}
+		.line{
+			height: 40px;
+		    width: 5px;
+		    border: 0;
+		    background-color: #0DF3BA;
+		    border-radius: 20%;
+		    left: 112px;
+		    top: 240px;
+		    transform-origin: 50% 100%;
+		    animation: clc 2s infinite linear;
+		}
+		@keyframes clc{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+		}
+		.maincircle:hover ~ .line{
+			
+  animation-play-state:paused;
+		}
+	</style>
+</head>
+<body>
+	<div class="minicircle"></div>
+	<div class="maincircle"></div>
+	<div class="dott"></div>
+	<div class="line"></div>
+</body>
+</html>
